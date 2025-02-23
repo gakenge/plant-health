@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Health Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #image-preview {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    #results {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Plant Health Checker</h1>
+  <input type="file" id="image-upload" accept="image/*">
+  <br>
+  <img id="image-preview" src="#" alt="Image Preview" style="display:none;">
+  <br>
+  <button id="predict-button" disabled>Check Plant Health</button>
+  <div id="results"></div>
+
+  <!-- Load TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <!-- Load your custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
