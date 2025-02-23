@@ -37,7 +37,7 @@ predictButton.addEventListener('click', async () => {
     .toFloat()
     .expandDims();
 
-  // Normalize the image (if required by your model)
+  // Normalize the image 
   const normalizedImage = image.div(255.0);
 
   // Run prediction
